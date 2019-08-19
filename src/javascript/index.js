@@ -2,16 +2,18 @@ import {HomeModule, AboutModule, MenuModule, OrderModule} from "./PageLoadModule
 
 const pageNavigation = () => {
     const tabs = document.querySelectorAll("ul li");
+    const content = document.querySelector("#tab-content");
+    let page = "";
     tabs.forEach((tab, index) => {
         tab.addEventListener('click', event => {
-            if(index === 0){
-                alert("Page 1")
+            if (index === 0){
+                HomeModule.load();
             } else if (index === 1) {
-                alert("Page 2")                
+                AboutModule.load();
             } else if (index === 2) {
-                alert("Page 3")                
+                MenuModule.load();
             } else if (index === 3) {
-                alert("Page 4")                
+                OrderModule.load();
             }
         })
     })

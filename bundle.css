@@ -1,71 +1,179 @@
-@-webkit-keyframes showTab {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@keyframes showTab {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.tabsy > button {
-  width: 100%;
-  font-family: inherit;
-  font-size: 100%;
-  margin: 0;
-  outline: 0;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   border: 0;
+  font-size: 100%;
+  font: inherit;
   vertical-align: baseline;
-  box-sizing: border-box;
-  background: transparent;
+  margin: 0;
+  padding: 0;
 }
-.tabsy > .tabButton {
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1em;
+  background: #F5F5F5;
+  font-family: "Dosis", sans-serif;
+  color: #565659;
+  background-color: #f6f3ee;
+}
+
+main {
   display: block;
-  margin-top: 1px;
-  background: #5a5243;
-  color: #F5F5F5;
+  margin: 80px auto;
+  padding: 0 20px;
   text-align: center;
-  transition: all 200ms ease-in-out;
 }
-.tabsy > input {
-  display: none;
+
+h1 {
+  font-size: 70px;
+  font-family: "Fredoka One", cursive;
+  text-align: center;
+  color: #5a5243;
 }
-.tabsy > input:checked + label + .tab {
-  display: block;
+
+h1 sup {
+  font-size: 14px;
+  margin-left: -20px;
+  display: inline-block;
+  line-height: 1;
 }
-.tabsy > input:checked + label + .tab > .content {
-  -webkit-animation: showTab 200ms ease-in-out;
-  animation: showTab 200ms ease-in-out;
+
+h2 {
+  font-size: 22px;
+  text-align: center;
+  margin: -7px 0 80px 0;
+  padding: 5px 5px 6px 5px;
+  display: inline-block;
+  line-height: 30px;
+  border-bottom: 1px solid #5a5243;
+  border-top: 1px solid #5a5243;
 }
-.tabsy > .tab {
-  background: #fff;
-  display: none;
+
+#content {
+  width: 70%;
+  background: #565659;
+  margin: 0 auto;
 }
-@media screen and (min-width: 768px) {
-  .tabsy {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .tabsy > .tabButton {
-    order: 1;
-    align-items: flex-start;
-    cursor: pointer;
-  }
-  .tabsy > input:checked + label {
-    background: #fff;
-    color: #5a5243;
-  }
-  .tabsy > .tab {
-    order: 2;
-  }
+
+ul.nav {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav-item {
+  padding: 10px;
+  border: 1px solid red;
+  font-size: 2em;
+  font-weight: bold;
+  width: 100px;
+}
+
+li.nav-item {
+  list-style: none;
+}
+
+.tab-content img {
+  width: 100%;
+}
+
+.tabButton {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 15px 20px;
+}
+
+.tab {
+  padding: 20px;
+  text-align: left;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 15px;
+  margin-top: 10px;
 }

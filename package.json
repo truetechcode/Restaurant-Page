@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/truetechcode/Restaurant-Page#readme",
   "devDependencies": {
-    "webpack": "^4.39.2"
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.7"
   }
 }

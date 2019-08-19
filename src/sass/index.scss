@@ -88,41 +88,32 @@ video {
 
 
 html {
-
     font-size: 62.5%;
-
 }
 
 body {
-
     font-size: 1em;
     background: #F5F5F5;
     font-family: 'Dosis', sans-serif;
     color: #565659;
     background-color: #f6f3ee;
-
 }
 
 h1 {
-
     font-size: 70px;
     font-family: 'Fredoka One', cursive;
     text-align: center;
     color: #5a5243;
-
 }
 
 p span {
-
     font-size: 24px;
     font-weight: 300;
     display: block;
     line-height: 1;
-
 }
 
 h3 {
-
     font-size: 22px;
     text-align: center;
     margin: -7px 0 40px 0;
@@ -131,7 +122,6 @@ h3 {
     line-height: 30px;
     border-bottom: 1px solid #5a5243;
     border-top: 1px solid #5a5243;
-
 }
 
 #content {
@@ -166,23 +156,22 @@ li.nav-item {
     height: 500px;
 }
 
-.discription {
-
-}
-
 .discription span {
     display: block;
     text-align: center;
 }
+
 #menu-items {
     display: flex;
     flex-direction: row;
 }
+
 #menu-items .menu-img {
     width: 20%;
     height: auto;
     flex-grow: 1;
 }
+
 .footer {
     text-align: center;
     background: #565659;
@@ -191,8 +180,6 @@ li.nav-item {
 }
 
 p {
-
     font-size: 15px;
     margin-top: 10px;
-
 }

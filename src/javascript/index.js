@@ -1,12 +1,15 @@
-import {HomeModule, AboutModule, MenuModule, OrderModule} from "./PageLoadModule";
+import {
+    HomeModule,
+    AboutModule,
+    MenuModule,
+    OrderModule
+} from "./PageLoadModule";
 
 const pageNavigation = () => {
     const tabs = document.querySelectorAll("ul li");
-    const content = document.querySelector("#tab-content");
-    let page = "";
     tabs.forEach((tab, index) => {
         tab.addEventListener('click', event => {
-            if (index === 0){
+            if (index === 0) {
                 HomeModule.load();
             } else if (index === 1) {
                 AboutModule.load();
@@ -20,3 +23,4 @@ const pageNavigation = () => {
 }
 
 pageNavigation();
+HomeModule.load();

@@ -1,0 +1,22 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "\"This project uses JavaScript to dynamically render a simple restaurant homepage.\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/truetechcode/Restaurant-Page.git"
+  },
+  "author": "\"Terver Aosu\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/truetechcode/Restaurant-Page/issues"
+  },
+  "homepage": "https://github.com/truetechcode/Restaurant-Page#readme",
+  "devDependencies": {
+    "webpack": "^4.39.2"
+  }
+}

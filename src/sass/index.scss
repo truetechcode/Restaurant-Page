@@ -149,6 +149,7 @@ ul.nav {
 li.nav-item {
     list-style: none;
     cursor: pointer;
+    color: burlywood;
 }
 
 #tab-content img {
@@ -164,6 +165,7 @@ li.nav-item {
 #menu-items {
     display: flex;
     flex-direction: row;
+    margin-top: 20px;
 }
 
 #menu-items .menu-img {

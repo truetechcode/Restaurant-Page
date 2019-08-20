@@ -7,20 +7,24 @@ import {
 
 const pageNavigation = () => {
     const tabs = document.querySelectorAll("ul li");
+    const content = document.querySelector("#tab-content");
     tabs.forEach((tab, index) => {
         tab.addEventListener('click', event => {
-            if (index === 0) {
-                HomeModule.load();
+            tab.classList.add("active");
+            if (index === 0) {                
+                content.innerHTML = HomeModule.load();
             } else if (index === 1) {
-                AboutModule.load();
+                content.innerHTML = AboutModule.load();
             } else if (index === 2) {
-                MenuModule.load();
+                content.innerHTML = MenuModule.load();
             } else if (index === 3) {
-                OrderModule.load();
+                content.innerHTML = OrderModule.load();
             }
         })
     })
+    content.innerHTML = HomeModule.load();
 }
-
-pageNavigation();
-HomeModule.load();
+const runApp = () => {
+    pageNavigation();
+}
+runApp()

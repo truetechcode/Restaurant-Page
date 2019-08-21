@@ -1,8 +1,5 @@
 import {
-    HomeModule,
-    AboutModule,
-    MenuModule,
-    OrderModule
+    PageModule
 } from "./PageLoadModule";
 
 const pageNavigation = () => {
@@ -10,21 +7,23 @@ const pageNavigation = () => {
     const content = document.querySelector("#tab-content");
     tabs.forEach((tab, index) => {
         tab.addEventListener('click', event => {
-            tab.classList.add("active");
-            if (index === 0) {                
-                content.innerHTML = HomeModule.load();
+                content.innerHTML = "";
+            if (index === 0) {      
+                PageModule.home();          
             } else if (index === 1) {
-                content.innerHTML = AboutModule.load();
+                PageModule.about();
             } else if (index === 2) {
-                content.innerHTML = MenuModule.load();
+                PageModule.menu();
             } else if (index === 3) {
-                content.innerHTML = OrderModule.load();
+                PageModule.order();
             }
         })
     })
-    content.innerHTML = HomeModule.load();
 }
 const runApp = () => {
+    PageModule.body()
     pageNavigation();
+    PageModule.home();
 }
+
 runApp()

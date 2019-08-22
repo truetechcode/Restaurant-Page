@@ -1,0 +1,183 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1em;
+  background: #F5F5F5;
+  font-family: "Dosis", sans-serif;
+  color: #565659;
+  background-color: #f6f3ee;
+}
+
+h1 {
+  font-size: 70px;
+  font-family: "Fredoka One", cursive;
+  text-align: center;
+  color: #5a5243;
+}
+
+p span {
+  font-size: 24px;
+  font-weight: 300;
+  display: block;
+  line-height: 1;
+}
+
+h3 {
+  font-size: 22px;
+  text-align: center;
+  margin: -7px 0 40px 0;
+  padding: 5px 5px 6px 5px;
+  display: inline-block;
+  line-height: 30px;
+  border-bottom: 1px solid #5a5243;
+  border-top: 1px solid #5a5243;
+}
+
+#content {
+  width: 70%;
+  margin: 0 auto;
+}
+
+ul.nav {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  justify-content: center;
+  width: 100%;
+  background: #565659;
+  color: #F5F5F5;
+}
+
+.nav-item {
+  padding: 10px;
+  font-size: 2em;
+  font-weight: bold;
+  width: 100px;
+}
+
+li.nav-item {
+  list-style: none;
+  cursor: pointer;
+  color: burlywood;
+}
+
+#tab-content img {
+  width: 100%;
+  height: 500px;
+}
+
+.discription span {
+  display: block;
+  text-align: center;
+}
+
+#menu-items {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+#menu-items .menu-img {
+  width: 20%;
+  height: auto;
+  flex-grow: 1;
+}
+
+.footer {
+  text-align: center;
+  background: #565659;
+  color: white;
+  padding: 1em;
+}
+
+p {
+  font-size: 15px;
+  margin-top: 10px;
+}

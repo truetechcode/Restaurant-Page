@@ -4,10 +4,9 @@ import {
 
 const pageNavigation = () => {
     const tabs = document.querySelectorAll("ul li");
-    const content = document.querySelector("#tab-content");
     tabs.forEach((tab, index) => {
         tab.addEventListener('click', event => {
-                content.innerHTML = "";
+            PageModule.clear();
             if (index === 0) {      
                 PageModule.home();          
             } else if (index === 1) {
@@ -22,8 +21,8 @@ const pageNavigation = () => {
 }
 const runApp = () => {
     PageModule.body()
+    PageModule.home();    
     pageNavigation();
-    PageModule.home();
 }
 
 runApp()

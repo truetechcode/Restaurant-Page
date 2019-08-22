@@ -112,6 +112,11 @@ const PageModule = (() => {
         container.appendChild(para3)
     }
 
+    mod.clear = () => {
+        const content = document.querySelector("#tab-content");
+        content.innerHTML = "";
+    }
+
     return mod;
 })();
 

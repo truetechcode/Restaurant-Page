@@ -10,7 +10,7 @@ This is a single page app, it uses JavaScript dynamic html rendering to render e
 
 ## LIVE DEMO
 
-[Live Preview](https://github.com/truetechcode)
+[Live Preview](https://truetechcode.github.io/Restaurant-Page/)
 
 ## Contributor
 

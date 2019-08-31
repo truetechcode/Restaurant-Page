@@ -139,17 +139,35 @@ ul.nav {
     color: #F5F5F5;
 }
 
-.nav-item {
+.nav-item, .drop-down {
     padding: 10px;
     font-size: 2em;
     font-weight: bold;
     width: 100px;
 }
 
-li.nav-item {
+li.nav-item, li.drop-down {
     list-style: none;
     cursor: pointer;
     color: burlywood;
+}
+
+.hide {
+    display: none;
+}
+
+li.drop-down ul {
+    position: absolute;
+    margin-top: 10px;
+    background: white;
+    width: max-content;
+    padding: 5px;
+}
+
+li.drop-down ul li {
+    list-style: none;
+    cursor: pointer;
+    color: #565659;
 }
 
 #tab-content img {

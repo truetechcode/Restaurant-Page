@@ -49,10 +49,16 @@ const PageModule = (() => {
 
     mod.home = () => {
         let panel = document.createElement('img')
-        panel.setAttribute( "alt","dinner-set")
+        panel.setAttribute("alt","dinner-set")
         panel.setAttribute("src", "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80")
         panel.classList.add('banner-img')
         container.appendChild(panel)
+
+        let panel2 = document.createElement('img')
+        panel2.setAttribute("alt","dinner-set")
+        panel2.setAttribute("src", "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80")
+        panel2.classList.add('banner-img')
+        container.appendChild(panel2)
     }
     mod.about = () => {
         para1.classList.add('description')

@@ -19,10 +19,27 @@ const pageNavigation = () => {
         })
     })
 }
+
+const imageSlider = () => {
+    const slides = document.querySelectorAll('img.banner-img');
+    slides.forEach((slide, i) => {
+        ((i)=>{
+            setTimeout(() => {
+                if (slide.classList.contains('hide')){
+                    slide.classList.remove('hide')
+                }else{
+                    slide.classList.add('hide')
+                }
+            }, 3000*i);        
+        })(i)        
+    })
+}
+
 const runApp = () => {
-    PageModule.body()
+    PageModule.body();
     PageModule.home();    
     pageNavigation();
+    imageSlider()
 }
 
 runApp()

@@ -14,7 +14,7 @@ const PageModule = (() => {
         container = document.createElement('div')
         let p = document.createElement('p')
         ul.classList.add('nav')
-        li1.classList.add('nav-item')
+        li1.classList.add('nav-item', 'active-nav-item')
         li2.classList.add('nav-item')
         li3.classList.add('nav-item')
         li4.classList.add('nav-item')

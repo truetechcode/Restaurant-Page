@@ -7,6 +7,12 @@ const pageNavigation = () => {
     tabs.forEach((tab, index) => {
         tab.addEventListener('click', event => {
             PageModule.clear();
+            tabs.forEach(tab => {
+                if (tab.classList.contains("active-nav-item")) {
+                    tab.classList.remove("active-nav-item");
+                }
+            })
+            tab.classList.add("active-nav-item");
             if (index === 0) {      
                 PageModule.home();          
             } else if (index === 1) {

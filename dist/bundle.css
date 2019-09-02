@@ -142,6 +142,10 @@ ul.nav {
   width: 100px;
 }
 
+.active-nav-item {
+  font-weight: lighter;
+}
+
 li.nav-item {
   list-style: none;
   cursor: pointer;

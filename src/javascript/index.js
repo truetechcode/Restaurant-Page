@@ -1,9 +1,12 @@
 import {
     PageModule
 } from "./PageLoadModule";
+import {
+    DropDownModule
+} from './menuModule';
 
 const pageNavigation = () => {
-    const tabs = document.querySelectorAll("ul li");
+    const tabs = document.querySelectorAll("ul li.nav-item");
     tabs.forEach((tab, index) => {
         tab.addEventListener('click', event => {
             PageModule.clear();
@@ -25,10 +28,13 @@ const pageNavigation = () => {
         })
     })
 }
+
+
 const runApp = () => {
-    PageModule.body()
+    PageModule.body();
     PageModule.home();    
     pageNavigation();
+    DropDownModule.dropDownMenu();
 }
 
 runApp()

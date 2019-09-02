@@ -11,6 +11,13 @@ const PageModule = (() => {
         let li2 = document.createElement('li')
         let li3 = document.createElement('li')
         let li4 = document.createElement('li')
+
+        let li5 = document.createElement('li')
+        let ul_drop = document.createElement('ul')
+        let li1_drop = document.createElement('li')
+        let li2_drop = document.createElement('li')
+        let li3_drop = document.createElement('li')
+
         container = document.createElement('div')
         let p = document.createElement('p')
         ul.classList.add('nav')
@@ -18,12 +25,21 @@ const PageModule = (() => {
         li2.classList.add('nav-item')
         li3.classList.add('nav-item')
         li4.classList.add('nav-item')
+
+        ul_drop.classList.add('hide')
+        li5.classList.add('drop-down')
+
         p.classList.add('footer')
 
         li1.innerHTML =  'Home'
         li2.innerHTML =  'About'
         li3.innerHTML =  'Menu'
         li4.innerHTML =  'Order'
+
+        li5.innerHTML =  'Drop'
+        li1_drop.innerHTML =  'Drop 1'
+        li2_drop.innerHTML =  'Drop 2'
+        li3_drop.innerHTML =  'Drop 3'
 
         h1.innerHTML =  'The Meal Restaurant App'
         head.appendChild(h1)
@@ -32,6 +48,13 @@ const PageModule = (() => {
         ul.appendChild(li2);
         ul.appendChild(li3);
         ul.appendChild(li4);
+
+        ul.appendChild(li5);
+        li5.appendChild(ul_drop);
+        ul_drop.appendChild(li1_drop);
+        ul_drop.appendChild(li2_drop);
+        ul_drop.appendChild(li3_drop);
+
         nav.appendChild(ul);        
         p.innerHTML =  '&copy; The Meal Restaurant'
 

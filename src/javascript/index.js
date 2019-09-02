@@ -1,6 +1,7 @@
 import {
     PageModule
 } from "./PageLoadModule";
+import { ValidationModule } from "./validationModule";
 
 const pageNavigation = () => {
     const tabs = document.querySelectorAll("ul li");
@@ -15,6 +16,7 @@ const pageNavigation = () => {
                 PageModule.menu();
             } else if (index === 3) {
                 PageModule.order();
+                ValidationModule.inputs();
             }
         })
     })

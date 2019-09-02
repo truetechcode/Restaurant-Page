@@ -4,6 +4,7 @@ import {
 import {
     DropDownModule
 } from './menuModule';
+import { ValidationModule } from "./validationModule";
 
 const pageNavigation = () => {
     const tabs = document.querySelectorAll("ul li.nav-item");
@@ -24,6 +25,7 @@ const pageNavigation = () => {
                 PageModule.menu();
             } else if (index === 3) {
                 PageModule.order();
+                ValidationModule.inputs();
             }
         })
     })

@@ -125,14 +125,21 @@ const PageModule = (() => {
         header.innerHTML =  'Place Your Order'
         para1.appendChild(span)
         para1.innerHTML =  'The Meal Restaurant is an exquisitely exciting place for everyone to take a meal away from home.'
-        para2.innerHTML =  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-        para3.innerHTML =  'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. '
+        para2.innerHTML =  
+        `<form id="form">
+        <input type="email" name="email" id="email" placeholder="Email">
+        <input type="email" name="email_confirm" id="email_confirm" placeholder="Email Confirmation">
+        <input type="text" name="country" id="country" placeholder="Country">
+        <input type="text" name="zip" id="zip" placeholder="Zip Code">
+        <input type="password" name="password" id="password" placeholder="Password">
+        <input type="password" name="password_confirm" id="password_confirm" placeholder="Password Confirmation">
+        <button type="submit">Submit</button>
+        </form>`
         span.innerHTML =  'You are welcome'
 
         container.appendChild(header);
         container.appendChild(para1);
         container.appendChild(para2)
-        container.appendChild(para3)
     }
 
     mod.clear = () => {

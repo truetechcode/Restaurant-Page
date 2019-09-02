@@ -142,15 +142,11 @@ ul.nav {
   width: 100px;
 }
 
-<<<<<<< HEAD
 .active-nav-item {
   font-weight: lighter;
 }
 
-li.nav-item {
-=======
 li.nav-item, li.drop-down {
->>>>>>> drop-down-menu
   list-style: none;
   cursor: pointer;
   color: burlywood;

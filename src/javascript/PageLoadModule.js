@@ -98,7 +98,7 @@ const PageModule = (() => {
         let img3 = document.createElement('img');
         para1.classList.add('description');
         menudiv.id = 'menu-items';
-        img1.classList.add('menu-img');
+        img1.classList.add('menu-img','gif');
         img2.classList.add('menu-img');
         img3.classList.add('menu-img');
         header.innerHTML =  "Our Chef's Menu"
@@ -108,7 +108,7 @@ const PageModule = (() => {
         img1.setAttribute('alt', 'menu1-img')
         img2.setAttribute('alt', 'menu2-img')
         img3.setAttribute('alt', 'menu3-img')
-        img1.setAttribute('src', 'https://images.unsplash.com/photo-1479832912902-77089f02b1d2?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80')
+        // img1.setAttribute('src', 'https://images.unsplash.com/photo-1479832912902-77089f02b1d2?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80')
         img2.setAttribute('src', 'https://images.unsplash.com/photo-1473093295043-cdd812d0e601?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80')
         img3.setAttribute('src', 'https://images.unsplash.com/photo-1473093226795-af9932fe5856?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=685&q=80')
 

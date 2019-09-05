@@ -5,6 +5,7 @@ import {
     DropDownModule
 } from './menuModule';
 import { ValidationModule } from "./validationModule";
+import { RandomGifModule } from "./randomGifModule";
 
 const pageNavigation = () => {
     const tabs = document.querySelectorAll("ul li.nav-item");
@@ -23,6 +24,8 @@ const pageNavigation = () => {
                 PageModule.about();
             } else if (index === 2) {
                 PageModule.menu();
+                const img = document.querySelector('img')
+                RandomGifModule.randomGif(img)
             } else if (index === 3) {
                 PageModule.order();
                 ValidationModule.inputs();
